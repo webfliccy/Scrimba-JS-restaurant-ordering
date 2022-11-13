@@ -15,6 +15,8 @@ Concepts covered:
 - addEventListener()
 - event.target
 
+Course links
+
 - [The Frontend Career Path](https://scrimba.com/learn/frontend)
 - [Solo Project - restaurant ordering app](https://scrimba.com/learn/frontend/solo-project-restaurant-ordering-app-co72e499baf5f48346e5975cf)
 Happy Coding!
