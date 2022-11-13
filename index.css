@@ -129,6 +129,8 @@ input[type="text"] {
     border: 1.5px solid #DEDEDE;
     border-radius: 50%;
     background: #fff;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -184,6 +186,7 @@ input[type="text"] {
     color: #fff;
     cursor: pointer;
     transition-duration: 600ms;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .checkout-submit:hover {
@@ -216,10 +219,12 @@ input[type="text"] {
 .cc-modal-content {
     position: relative;
     width: 80%;
+    max-width: 40em;
     background: #fff;
     margin: auto;
     overflow: scroll;
     border-radius: 4px;
+
 }
 
 .cc-modal-close {

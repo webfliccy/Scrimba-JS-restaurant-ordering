@@ -31,14 +31,17 @@ document.addEventListener("click", function(e){
         document.getElementById("cc-modal").classList.toggle("hidden")
     }
     else if (e.target.id === "submit-payment"){
-        e.preventDefault()
-        document.getElementById("cc-modal").classList.toggle("hidden")
-        //disable order buttons
-        const buttons = document.querySelectorAll(".menu-item__btn")
-        buttons.forEach(function(item){item.disabled = true})
-        //show success msg
-        const customerName = document.getElementById("customer-name")
-        document.getElementById("checkout").innerHTML = `<div class="success-msg">Thanks, ${customerName.value}! Your order is on its way!</div>`
+        const thisForm = document.getElementById("cc-form")
+        if (thisForm.checkValidity()) {
+            e.preventDefault()
+            document.getElementById("cc-modal").classList.toggle("hidden")
+            //disable order buttons
+            const buttons = document.querySelectorAll(".menu-item__btn")
+            buttons.forEach(function(item){item.disabled = true})
+            //show success msg
+            const customerName = document.getElementById("customer-name")
+            document.getElementById("checkout").innerHTML = `<div class="success-msg">Thanks, ${customerName.value}! Your order is on its way!</div>`
+        }
     }
     
 })
