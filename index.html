@@ -1,0 +1,51 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main id ="container" class="container">
+            <div class="menu" id="menu">
+                <!-- menu here -->
+            </div>
+            <section id="checkout">
+                <h2 class="checkout-heading">Your order</h2>
+                <div id="checkout-list">
+                    <!-- order here -->
+                </div>
+                <div class="checkout-total">
+                    <h3>Total price:</h3>
+                    <p class="checkout-price" id="checkout-price"></p>
+                </div>
+                <button class="checkout-submit" id="submit-order">Complete order</button>
+            </section>
+        </main>
+        <!-- The Modal -->
+        <div id="cc-modal" class="cc-modal hidden">
+            <div class="cc-modal-content">
+                <div class="modal-container">
+                <button class="cc-modal-close" title="close" id="cc-modal-close">X</button>
+                <form>
+                    <fieldset>
+                        <legend>Enter card details</legend>
+                        <input type="text" placeholder="Enter your name" name="name" id="customer-name" required>
+                        <input id="cardnumber" type="text" pattern="[0-9]*" name="cc-number" inputmode="numeric" placeholder="Enter card number" required>  
+                        <input type="text" Placeholder="Enter CCV" name="ccv" required>
+                        <input type="submit" id="submit-payment" class="checkout-submit">
+                    </fieldset>
+                </form>
+                </div>
+            </div>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
